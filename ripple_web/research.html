@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ripple</title>
+<script>
+const sections = {radar:'history-radar-panel',contagion:'shock-ripple',replay:'history-radar-panel',fingerprint:'shock-ripple',evaluation:'evaluation',nulls:'capabilities',method:'method-heading',acceptance:'acceptance',omissions:'evaluation'};
+const requested = location.hash.slice(1);
+const target = sections[requested] || 'evaluation';
+const params = new URLSearchParams(location.search);
+params.set('mode', 'history');
+location.replace('index.html?' + params.toString() + '#' + target);
+</script></head>
+<body><a href="index.html#evaluation">进入 Ripple</a></body></html>

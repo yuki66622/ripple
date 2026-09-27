@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "contract_sha256": "fb865f8cd5599871764bff1ca2d70856454769128012ac1fdfa3f7a519367ea2",
+  "population": {
+    "expected_by_month": {
+      "2026-01": 84,
+      "2026-02": 56
+    },
+    "found_by_month": {
+      "2026-01": 84,
+      "2026-02": 56
+    },
+    "expected_events": 140,
+    "validated_events": 140,
+    "invalid_or_missing": []
+  },
+  "assets": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "XRP",
+    "DOGE",
+    "ADA",
+    "AVAX",
+    "LINK",
+    "LTC"
+  ],
+  "groups": {
+    "2026-01": {
+      "event_count": 84,
+      "volatility": {
+        "events_with_omission": 67,
+        "event_denominator": 84,
+        "event_omission_rate": 0.7976190476190477,
+        "missed_asset_event_pairs": 156,
+        "mean_missed_assets_per_event": 1.8571428571428572,
+        "excess_bps_denominator": 156,
+        "median_excess_bps": 10.098822642946107,
+        "max_excess_bps": 234.2947270769707
+      },
+      "max_drawdown": {
+        "events_with_omission": 75,
+        "event_denominator": 84,
+        "event_omission_rate": 0.8928571428571429,
+        "missed_asset_event_pairs": 254,
+        "mean_missed_assets_per_event": 3.0238095238095237,
+        "excess_bps_denominator": 254,
+        "median_excess_bps": 14.410580678081988,
+        "max_excess_bps": 197.63593831940344
+      },
+      "either_metric": {
+        "events_with_omission": 79,
+        "event_denominator": 84,
+        "event_omission_rate": 0.9404761904761905
+      },
+      "both_metrics": {
+        "events_with_omission": 63,
+        "event_denominator": 84,
+        "event_omission_rate": 0.75
+      },
+      "union_missed_asset_event_pairs": 282,
+      "mean_union_missed_assets_per_event": 3.357142857142857
+    },
+    "2026-02": {
+      "event_count": 56,
+      "volatility": {
+        "events_with_omission": 45,
+        "event_denominator": 56,
+        "event_omission_rate": 0.8035714285714286,
+        "missed_asset_event_pairs": 126,
+        "mean_missed_assets_per_event": 2.25,
+        "excess_bps_denominator": 126,
+        "median_excess_bps": 8.659086719403955,
+        "max_excess_bps": 65.91053286553147
+      },
+      "max_drawdown": {
+        "events_with_omission": 50,
+        "event_denominator": 56,
+        "event_omission_rate": 0.8928571428571429,
+        "missed_asset_event_pairs": 202,
+        "mean_missed_assets_per_event": 3.607142857142857,
+        "excess_bps_denominator": 202,
+        "median_excess_bps": 12.785942680653365,
+        "max_excess_bps": 159.22263861713824
+      },
+      "either_metric": {
+        "events_with_omission": 52,
+        "event_denominator": 56,
+        "event_omission_rate": 0.9285714285714286
+      },
+      "both_metrics": {
+        "events_with_omission": 43,
+        "event_denominator": 56,
+        "event_omission_rate": 0.7678571428571429
+      },
+      "union_missed_asset_event_pairs": 221,
+      "mean_union_missed_assets_per_event": 3.9464285714285716
+    },
+    "combined": {
+      "event_count": 140,
+      "volatility": {
+        "events_with_omission": 112,
+        "event_denominator": 140,
+        "event_omission_rate": 0.8,
+        "missed_asset_event_pairs": 282,
+        "mean_missed_assets_per_event": 2.0142857142857142,
+        "excess_bps_denominator": 282,
+        "median_excess_bps": 9.695822338213626,
+        "max_excess_bps": 234.2947270769707
+      },
+      "max_drawdown": {
+        "events_with_omission": 125,
+        "event_denominator": 140,
+        "event_omission_rate": 0.8928571428571429,
+        "missed_asset_event_pairs": 456,
+        "mean_missed_assets_per_event": 3.257142857142857,
+        "excess_bps_denominator": 456,
+        "median_excess_bps": 13.885768476209698,
+        "max_excess_bps": 197.63593831940344
+      },
+      "either_metric": {
+        "events_with_omission": 131,
+        "event_denominator": 140,
+        "event_omission_rate": 0.9357142857142857
+      },
+      "both_metrics": {
+        "events_with_omission": 106,
+        "event_denominator": 140,
+        "event_omission_rate": 0.7571428571428571
+      },
+      "union_missed_asset_event_pairs": 503,
+      "mean_union_missed_assets_per_event": 3.592857142857143
+    }
+  },
+  "selection": "Top3 by frozen historical_30 volatility descending; exact ties preserve fixed asset order; all10 include origins",
+  "comparison": "Same historical-volatility Top3 for both actual metrics; any unselected actual value strictly above min(selected actual) is an omission",
+  "units": "Risk scalars are fractions; excess_bps=(unselected_actual-min_selected_actual)*10000",
+  "amplitude_denominator": "Missed asset-event pairs, separately for volatility and max_drawdown; no misses => median/max null",
+  "aggregation": "Every complete event has equal weight; zero-omission events retained; combined counts sum both months",
+  "limitations": "Relative screening omission in a frozen shock catalog, not an absolute loss alarm or Kronos score. Event windows may be correlated. No inference of causal/independent samples or safe exclusion of seven assets.",
+  "publication_status": "requires_user_confirmation_before_pitch"
+}

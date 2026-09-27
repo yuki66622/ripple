@@ -1,0 +1,645 @@
+{
+  "method_names": [
+    "kronos_base",
+    "no_propagation",
+    "btc_beta",
+    "historical_30"
+  ],
+  "groups": {
+    "all": {
+      "catalog_event_count": 84,
+      "eligible_event_count": 84,
+      "unclassified_event_count": 0,
+      "common_paired_event_count": 84,
+      "common_paired_event_ids": [
+        "event_c548476cb601973b4a6ee92b8988659e3bc9dbe2a9831fbeb11820d5e78418c1",
+        "event_940d9ef270ee77d6255abac35e570497d76319d4f6e7bceaf354e1168197a17d",
+        "event_c1042672ac48f4bd8aab62eacb212f66cec0aa5455b73637d81f4792e69be1a9",
+        "event_a1ba343af09021cd3a1bffce48ed543672d1dd860b2383dfe25b1601a74c2fcc",
+        "event_ead9c504e9e4bb4e280e20a91693e0661b0720bd6151594ce3508e4dca7eec0e",
+        "event_70d9b0c8191516b505bbb9783d1d711599d96a235bebec2917a339243b94be2e",
+        "event_62e31884ae32f8173ebdd8d1d185f84f1beb3b6e1820111678afb546b722c812",
+        "event_24c332fafa7a723e34cde608b73e1eef5d42faa6a7872eb91930b48e8bb119cf",
+        "event_b5ac2bdac248e8e5274fe7ac3a7cb0993efb3b5af7dfa87433570875837ba141",
+        "event_91b85efe25cfc107080901654096cd10e6159880305ed977bb56b3c3f501f20a",
+        "event_f677c8f484ea7a20ddcf6a07dacf2fc0609739b90ae33d039bff98cb41730c05",
+        "event_c997f81cddd5387cc0f23b4d8d2277250c35071059c5e04da8bd11384ac6c42a",
+        "event_dcadaf5652673b04fb309058780d24a939ee67c8ee7c144817ae61fc27e553f5",
+        "event_a9ebd64f24ba07b3704dc4d0617a4a0f0d1b61d80d8d35a27fa31b1d7a9c5416",
+        "event_66080073b3b1cb6900d83c75d3de722701b0eacbe6276be499d28af39eae395b",
+        "event_92060d726588c4ff374e54a764dc6051901dae4e2ff592a25a8ecc16714d571f",
+        "event_147b00e5f21da112267063a6522d4214bafa5555c0560760fcd8910a5b67bd95",
+        "event_6c2d42e7326704ec735ca58b9f8e5990dddc4450c7840a5290c3a0262dde927c",
+        "event_4a72366689fc4ca7faf8c34b11ef01f48735b1076f537deaf78c01b22a12a3e1",
+        "event_71fb9b5247dae38baae285dd081f48e4b63e00ef220ebfb316c3a76ef2f4b6e6",
+        "event_cc92f5f4022942d5e697deaedbff943904794d6bee5c545ad94050748f41da02",
+        "event_71fa5e5ea8d864cf5558047818ab59955ed5050ffd18d38b5c47669067a9b6dd",
+        "event_c1394950a60bde55105165a00c13595075de873e190c76e74af8b6af296ac5bd",
+        "event_cdc1d4cf4e35cb5900ad459e746f8d07982acf90bc7a2299d8f9a211ed9b57f5",
+        "event_d1b7aade1366eec0fcbd4c83ec5e1592de0e367e0368223d6cd5a41d94743633",
+        "event_41f13ab765e35e826247616ce1bb4207da3ac6934b9fb8504ff6a6823d2e0d9d",
+        "event_cad3ea1e0b37d18a2ec45fb3be11659e64dc65e7619e626c98f59e3e0fec4df1",
+        "event_a0a6776fd1ebfe7a70339325c287c6b968e656dbe67e757ef81684199cf108ea",
+        "event_e0e2a84c6ffc0c6fd1121cd105754e366b4505e3c0a50d97a7c760046734a3d5",
+        "event_369bd05f170538180a0a2d81bddbacb48ac826325a408e9f781d4da42c505615",
+        "event_b7c102e00af846376d1b36e001b0c2a4eb8c9e9fbe293559aae94d5a3afcd0b3",
+        "event_6815f3fd7c502760202238bb7c21f3deeef1a31b70c7b7212c8be9219c78f20a",
+        "event_e50b28d12389c40646d4fa5e85b958ee35e3bf0a955b8e0a73e4016bcea44ee1",
+        "event_5318ccfe84bcb2cf7b460630af5a7ec1ead660ac55fd8a27fe01527a024dd34d",
+        "event_dc652996b19e2a3c7bc991374d6b1b19c7dd60871fb1f222b6259c228e4f7b04",
+        "event_f0c900c9e15f7028dff6f22937a770c6b41573aba7baafb88174e9a861b61580",
+        "event_327d884b042a4aa197292fbc10e1c4a44f3b981ffd86363a0c6ada27d6d961c3",
+        "event_f595a64fc07b96d382d8cd663367b3748f7acdf3cd9ce67dab26e5a2326ab8aa",
+        "event_27630926bc608876345fa925798457c306357a089fa6249995ccf69d1ab8750b",
+        "event_a2251645514c7ec05a720ae8b242c7db02d04c76da09f7ebf4cdbef37bdb8132",
+        "event_396167670e3132db1a3ced574f9778acfd0d498f6a11bd084cc6277dde334f72",
+        "event_aae6fde7106efd4d7b25f148b75ad4417876f267314e146ea979c0553c3194cb",
+        "event_37972e3ec22186a6b3afae80c6d33c76c2b2241c83219be8d9c9581fc432c00a",
+        "event_8d0946c50be0e0aaca218a2fcb6ab57003ad982876e874925b4cf58456895bb7",
+        "event_a02709483a29cb0251d58c2c668677f8d1e88a1d993745acafd2ecad582b9a0c",
+        "event_8d4fc2530809f5e0c33142fd92412aca4c65843e1485ca4d73f7197f1e96fc76",
+        "event_eaeca627b63df9364a468bfee848b1edf730e3c28114813d5ea3ff996c86a4fc",
+        "event_0220a4860ee7e507fc48b72ee440b7f34e5eae98f4146723e9a281a312f8a40a",
+        "event_ba2c6810ea3e306fe6580057d2aac21209d00a13c76cf760368585b4d2aaa7ac",
+        "event_1654ebde447fff32b8896b604adc1cc49d73285b4706d156ed49a61a3f207b48",
+        "event_63ebb514067b74978b271ce4aa1fb15b4caaef9bf9ae50b160f7d77745651cd9",
+        "event_3942a939122ea25b490ab87b2ab72ce4ea6837a42e3555a1448e89c9cb34f3a2",
+        "event_56f91a9b7f74279a89bf7129e65118ad3e18998881a60be7a902fd93217f4760",
+        "event_9450b40f521cc9ccc57291792b30c18b635ceed68ea03c0f34672ab2488a6faa",
+        "event_b6c07f9f46496e105b32c0435ea83dd97728f472e055054cd6029984844ad2b5",
+        "event_73aee6298d30b7e0b08eb41ea6407b121c7cc3b3037bd33065c8e28f96941cde",
+        "event_752c96935cbcc0f6ecb9bffb54e2c4d8d4be6da6e4785b72369939b4cd85d5e8",
+        "event_6235cb6ca7324ceb68c1fdab1e3b7a3c0234705b57a0de4c88bfc45d9aacac79",
+        "event_ad947e6f8930706ff4e37cd28b799c6ced3d358d775f8014e4a1bee199e19cb1",
+        "event_32fd762d568ac0dd94d5f0c77b63101e9ff7304e3f06d3f63512aded5d0badc5",
+        "event_ceaad5368cb3f9e3886c50b1f6b3edf09a8205ff1737684a1ee5e169bde38136",
+        "event_f9adea0ee78429e9d6ebf7087f6e110914d3e6b2820fa16df458feadeddad637",
+        "event_f4b3b033e73959b6f139f154d80dc9e35bac6f882b0a3ff2909be958accc0e8b",
+        "event_2b95a5aecb59137bc1865283589ca2ce1b6fd83cf0200db29a29de42959d9dbf",
+        "event_b7b39f5db914265be02b04d2e9ebcb6ff006a66287f41ca7f2602f200cf1acc5",
+        "event_4dd7dd56690249e176dd2d13f554d3f0d0a9c8012fc898cb3d0fc7af541c8c02",
+        "event_66820227e96df4b792ba552ab85b32d2109efae0b6f7a3547f22ccd98640e8f0",
+        "event_d698ed544dad96ae1e64c4194a96837d456676c91f93dca339cc409b517eb6ab",
+        "event_c3d3d101b8ea7eca2d0c189cf9056db24ec1489bcb3b2eca780d58a13e65cf7e",
+        "event_6a570762df2b2f24d2b1f3de87929c650e8b46d999d698a16eadfc9e0b06a985",
+        "event_b3143d0265fdf7e0003f564c6ee3f1800e5cb77a249383651595aaaff4b020c5",
+        "event_1700e9907d7f71c5694d4092057ff1718e4db9b25936f6017939ed1a9e8975f6",
+        "event_f78c9db3411a7ffe8b9daca2820c45cf88e812483b0a1490778ed5b4e364cba3",
+        "event_d8242aafc1fc855a2e6fa3e627bab5444b042dbac7eec5b6f61ac9cbd619d500",
+        "event_ae50c3708097b0ffc016d3fd0245f37b152bd1cee62c71bc5b28e8a1261c9c52",
+        "event_e9eb63ea366d5170256e556f44ecfec272bb99d8bc22b23512fdca356d711149",
+        "event_a45ab0dc6413874a824daf46a3e6b1f4d3c34d216083d7e767e9b5ece9366111",
+        "event_788cff57a09966d9113eceaf182158a8a04068234c2e26afbb69d4c3aa6d52a4",
+        "event_c4957323ffacdb5a914bd20a0322d8865f2836f82ca789ab748a9b39a75f0723",
+        "event_9e71a23e7fa0ec59d4fbebe71859f867e974840ca27f59f6b882ea652150d48c",
+        "event_83dd7b09de83c35f24e4c18e4bbfea1175fc8dbf25a0437eac5d02d7ddc8762d",
+        "event_6bca91064f7304f07c7df268d439b5c4d0787d301821c89d72fa41981f7a559d",
+        "event_74f73b14dd8342f45a4d4a1e8d2d36dfa8e7012299fa28ef619b83f941c126e8",
+        "event_b3bace4e1a5ff089c7026cf300cde2bd0ef3b1edf1e6e629a75fad16ced2b2f1"
+      ],
+      "method_status_counts": {
+        "kronos_base": {
+          "scored": 84
+        },
+        "no_propagation": {
+          "scored": 84
+        },
+        "btc_beta": {
+          "scored": 84
+        },
+        "historical_30": {
+          "scored": 84
+        }
+      },
+      "scores": {
+        "kronos_base": {
+          "max_drawdown": {
+            "event_count": 84,
+            "mae": 0.003763916738562907,
+            "mae_bps": 37.63916738562907,
+            "spearman": 0.3794707276850134,
+            "spearman_defined_events": 84,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.49206349206349204
+          },
+          "volatility": {
+            "event_count": 84,
+            "mae": 0.0029926372982373712,
+            "mae_bps": 29.92637298237371,
+            "spearman": 0.650033498247784,
+            "spearman_defined_events": 84,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.615079365079365
+          }
+        },
+        "no_propagation": {
+          "max_drawdown": {
+            "event_count": 84,
+            "mae": 0.006296992984275017,
+            "mae_bps": 62.96992984275017,
+            "spearman": 0.17060704445994562,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 64,
+            "spearman_undefined_reasons": {
+              "constant_prediction": 64
+            },
+            "top3_recall_expected": 0.34248236331569665
+          },
+          "volatility": {
+            "event_count": 84,
+            "mae": 0.005359090649392754,
+            "mae_bps": 53.59090649392754,
+            "spearman": 0.3335983498888095,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 64,
+            "spearman_undefined_reasons": {
+              "constant_prediction": 64
+            },
+            "top3_recall_expected": 0.3637014991181658
+          }
+        },
+        "btc_beta": {
+          "max_drawdown": {
+            "event_count": 84,
+            "mae": 0.004261503007323049,
+            "mae_bps": 42.61503007323049,
+            "spearman": 0.5045171098742527,
+            "spearman_defined_events": 84,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.5436507936507936
+          },
+          "volatility": {
+            "event_count": 84,
+            "mae": 0.002789377313782842,
+            "mae_bps": 27.893773137828422,
+            "spearman": 0.6779066171923315,
+            "spearman_defined_events": 84,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.6388888888888888
+          }
+        },
+        "historical_30": {
+          "max_drawdown": {
+            "event_count": 84,
+            "mae": 0.004611635451785922,
+            "mae_bps": 46.11635451785923,
+            "spearman": 0.4541331684188827,
+            "spearman_defined_events": 84,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.49206349206349204
+          },
+          "volatility": {
+            "event_count": 84,
+            "mae": 0.0020351418777489914,
+            "mae_bps": 20.351418777489915,
+            "spearman": 0.7897701504844362,
+            "spearman_defined_events": 84,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.7341269841269841
+          }
+        }
+      },
+      "excluded_from_pairing": []
+    },
+    "systemic": {
+      "catalog_event_count": 20,
+      "eligible_event_count": 20,
+      "unclassified_event_count": 0,
+      "common_paired_event_count": 20,
+      "common_paired_event_ids": [
+        "event_dcadaf5652673b04fb309058780d24a939ee67c8ee7c144817ae61fc27e553f5",
+        "event_71fa5e5ea8d864cf5558047818ab59955ed5050ffd18d38b5c47669067a9b6dd",
+        "event_a2251645514c7ec05a720ae8b242c7db02d04c76da09f7ebf4cdbef37bdb8132",
+        "event_396167670e3132db1a3ced574f9778acfd0d498f6a11bd084cc6277dde334f72",
+        "event_63ebb514067b74978b271ce4aa1fb15b4caaef9bf9ae50b160f7d77745651cd9",
+        "event_3942a939122ea25b490ab87b2ab72ce4ea6837a42e3555a1448e89c9cb34f3a2",
+        "event_56f91a9b7f74279a89bf7129e65118ad3e18998881a60be7a902fd93217f4760",
+        "event_752c96935cbcc0f6ecb9bffb54e2c4d8d4be6da6e4785b72369939b4cd85d5e8",
+        "event_6235cb6ca7324ceb68c1fdab1e3b7a3c0234705b57a0de4c88bfc45d9aacac79",
+        "event_32fd762d568ac0dd94d5f0c77b63101e9ff7304e3f06d3f63512aded5d0badc5",
+        "event_f9adea0ee78429e9d6ebf7087f6e110914d3e6b2820fa16df458feadeddad637",
+        "event_f4b3b033e73959b6f139f154d80dc9e35bac6f882b0a3ff2909be958accc0e8b",
+        "event_d698ed544dad96ae1e64c4194a96837d456676c91f93dca339cc409b517eb6ab",
+        "event_b3143d0265fdf7e0003f564c6ee3f1800e5cb77a249383651595aaaff4b020c5",
+        "event_d8242aafc1fc855a2e6fa3e627bab5444b042dbac7eec5b6f61ac9cbd619d500",
+        "event_a45ab0dc6413874a824daf46a3e6b1f4d3c34d216083d7e767e9b5ece9366111",
+        "event_788cff57a09966d9113eceaf182158a8a04068234c2e26afbb69d4c3aa6d52a4",
+        "event_83dd7b09de83c35f24e4c18e4bbfea1175fc8dbf25a0437eac5d02d7ddc8762d",
+        "event_6bca91064f7304f07c7df268d439b5c4d0787d301821c89d72fa41981f7a559d",
+        "event_74f73b14dd8342f45a4d4a1e8d2d36dfa8e7012299fa28ef619b83f941c126e8"
+      ],
+      "method_status_counts": {
+        "kronos_base": {
+          "scored": 20
+        },
+        "no_propagation": {
+          "scored": 20
+        },
+        "btc_beta": {
+          "scored": 20
+        },
+        "historical_30": {
+          "scored": 20
+        }
+      },
+      "scores": {
+        "kronos_base": {
+          "max_drawdown": {
+            "event_count": 20,
+            "mae": 0.0069831356843181635,
+            "mae_bps": 69.83135684318164,
+            "spearman": 0.3048484848484848,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.39999999999999997
+          },
+          "volatility": {
+            "event_count": 20,
+            "mae": 0.006453657812667485,
+            "mae_bps": 64.53657812667485,
+            "spearman": 0.5345454545454545,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.4333333333333333
+          }
+        },
+        "no_propagation": {
+          "max_drawdown": {
+            "event_count": 20,
+            "mae": 0.011636113284634212,
+            "mae_bps": 116.36113284634212,
+            "spearman": 0.17060704445994562,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.3571759259259259
+          },
+          "volatility": {
+            "event_count": 20,
+            "mae": 0.007500560072743801,
+            "mae_bps": 75.00560072743801,
+            "spearman": 0.3335983498888095,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.4462962962962963
+          }
+        },
+        "btc_beta": {
+          "max_drawdown": {
+            "event_count": 20,
+            "mae": 0.008554300191338533,
+            "mae_bps": 85.54300191338534,
+            "spearman": 0.39575757575757575,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.39999999999999997
+          },
+          "volatility": {
+            "event_count": 20,
+            "mae": 0.005561870715569989,
+            "mae_bps": 55.61870715569988,
+            "spearman": 0.5969696969696969,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.5833333333333333
+          }
+        },
+        "historical_30": {
+          "max_drawdown": {
+            "event_count": 20,
+            "mae": 0.009369770914794828,
+            "mae_bps": 93.69770914794827,
+            "spearman": 0.3054545454545455,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.36666666666666664
+          },
+          "volatility": {
+            "event_count": 20,
+            "mae": 0.004684889414971144,
+            "mae_bps": 46.84889414971144,
+            "spearman": 0.673939393939394,
+            "spearman_defined_events": 20,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.6
+          }
+        }
+      },
+      "excluded_from_pairing": []
+    },
+    "non_systemic": {
+      "catalog_event_count": 64,
+      "eligible_event_count": 64,
+      "unclassified_event_count": 0,
+      "common_paired_event_count": 64,
+      "common_paired_event_ids": [
+        "event_c548476cb601973b4a6ee92b8988659e3bc9dbe2a9831fbeb11820d5e78418c1",
+        "event_940d9ef270ee77d6255abac35e570497d76319d4f6e7bceaf354e1168197a17d",
+        "event_c1042672ac48f4bd8aab62eacb212f66cec0aa5455b73637d81f4792e69be1a9",
+        "event_a1ba343af09021cd3a1bffce48ed543672d1dd860b2383dfe25b1601a74c2fcc",
+        "event_ead9c504e9e4bb4e280e20a91693e0661b0720bd6151594ce3508e4dca7eec0e",
+        "event_70d9b0c8191516b505bbb9783d1d711599d96a235bebec2917a339243b94be2e",
+        "event_62e31884ae32f8173ebdd8d1d185f84f1beb3b6e1820111678afb546b722c812",
+        "event_24c332fafa7a723e34cde608b73e1eef5d42faa6a7872eb91930b48e8bb119cf",
+        "event_b5ac2bdac248e8e5274fe7ac3a7cb0993efb3b5af7dfa87433570875837ba141",
+        "event_91b85efe25cfc107080901654096cd10e6159880305ed977bb56b3c3f501f20a",
+        "event_f677c8f484ea7a20ddcf6a07dacf2fc0609739b90ae33d039bff98cb41730c05",
+        "event_c997f81cddd5387cc0f23b4d8d2277250c35071059c5e04da8bd11384ac6c42a",
+        "event_a9ebd64f24ba07b3704dc4d0617a4a0f0d1b61d80d8d35a27fa31b1d7a9c5416",
+        "event_66080073b3b1cb6900d83c75d3de722701b0eacbe6276be499d28af39eae395b",
+        "event_92060d726588c4ff374e54a764dc6051901dae4e2ff592a25a8ecc16714d571f",
+        "event_147b00e5f21da112267063a6522d4214bafa5555c0560760fcd8910a5b67bd95",
+        "event_6c2d42e7326704ec735ca58b9f8e5990dddc4450c7840a5290c3a0262dde927c",
+        "event_4a72366689fc4ca7faf8c34b11ef01f48735b1076f537deaf78c01b22a12a3e1",
+        "event_71fb9b5247dae38baae285dd081f48e4b63e00ef220ebfb316c3a76ef2f4b6e6",
+        "event_cc92f5f4022942d5e697deaedbff943904794d6bee5c545ad94050748f41da02",
+        "event_c1394950a60bde55105165a00c13595075de873e190c76e74af8b6af296ac5bd",
+        "event_cdc1d4cf4e35cb5900ad459e746f8d07982acf90bc7a2299d8f9a211ed9b57f5",
+        "event_d1b7aade1366eec0fcbd4c83ec5e1592de0e367e0368223d6cd5a41d94743633",
+        "event_41f13ab765e35e826247616ce1bb4207da3ac6934b9fb8504ff6a6823d2e0d9d",
+        "event_cad3ea1e0b37d18a2ec45fb3be11659e64dc65e7619e626c98f59e3e0fec4df1",
+        "event_a0a6776fd1ebfe7a70339325c287c6b968e656dbe67e757ef81684199cf108ea",
+        "event_e0e2a84c6ffc0c6fd1121cd105754e366b4505e3c0a50d97a7c760046734a3d5",
+        "event_369bd05f170538180a0a2d81bddbacb48ac826325a408e9f781d4da42c505615",
+        "event_b7c102e00af846376d1b36e001b0c2a4eb8c9e9fbe293559aae94d5a3afcd0b3",
+        "event_6815f3fd7c502760202238bb7c21f3deeef1a31b70c7b7212c8be9219c78f20a",
+        "event_e50b28d12389c40646d4fa5e85b958ee35e3bf0a955b8e0a73e4016bcea44ee1",
+        "event_5318ccfe84bcb2cf7b460630af5a7ec1ead660ac55fd8a27fe01527a024dd34d",
+        "event_dc652996b19e2a3c7bc991374d6b1b19c7dd60871fb1f222b6259c228e4f7b04",
+        "event_f0c900c9e15f7028dff6f22937a770c6b41573aba7baafb88174e9a861b61580",
+        "event_327d884b042a4aa197292fbc10e1c4a44f3b981ffd86363a0c6ada27d6d961c3",
+        "event_f595a64fc07b96d382d8cd663367b3748f7acdf3cd9ce67dab26e5a2326ab8aa",
+        "event_27630926bc608876345fa925798457c306357a089fa6249995ccf69d1ab8750b",
+        "event_aae6fde7106efd4d7b25f148b75ad4417876f267314e146ea979c0553c3194cb",
+        "event_37972e3ec22186a6b3afae80c6d33c76c2b2241c83219be8d9c9581fc432c00a",
+        "event_8d0946c50be0e0aaca218a2fcb6ab57003ad982876e874925b4cf58456895bb7",
+        "event_a02709483a29cb0251d58c2c668677f8d1e88a1d993745acafd2ecad582b9a0c",
+        "event_8d4fc2530809f5e0c33142fd92412aca4c65843e1485ca4d73f7197f1e96fc76",
+        "event_eaeca627b63df9364a468bfee848b1edf730e3c28114813d5ea3ff996c86a4fc",
+        "event_0220a4860ee7e507fc48b72ee440b7f34e5eae98f4146723e9a281a312f8a40a",
+        "event_ba2c6810ea3e306fe6580057d2aac21209d00a13c76cf760368585b4d2aaa7ac",
+        "event_1654ebde447fff32b8896b604adc1cc49d73285b4706d156ed49a61a3f207b48",
+        "event_9450b40f521cc9ccc57291792b30c18b635ceed68ea03c0f34672ab2488a6faa",
+        "event_b6c07f9f46496e105b32c0435ea83dd97728f472e055054cd6029984844ad2b5",
+        "event_73aee6298d30b7e0b08eb41ea6407b121c7cc3b3037bd33065c8e28f96941cde",
+        "event_ad947e6f8930706ff4e37cd28b799c6ced3d358d775f8014e4a1bee199e19cb1",
+        "event_ceaad5368cb3f9e3886c50b1f6b3edf09a8205ff1737684a1ee5e169bde38136",
+        "event_2b95a5aecb59137bc1865283589ca2ce1b6fd83cf0200db29a29de42959d9dbf",
+        "event_b7b39f5db914265be02b04d2e9ebcb6ff006a66287f41ca7f2602f200cf1acc5",
+        "event_4dd7dd56690249e176dd2d13f554d3f0d0a9c8012fc898cb3d0fc7af541c8c02",
+        "event_66820227e96df4b792ba552ab85b32d2109efae0b6f7a3547f22ccd98640e8f0",
+        "event_c3d3d101b8ea7eca2d0c189cf9056db24ec1489bcb3b2eca780d58a13e65cf7e",
+        "event_6a570762df2b2f24d2b1f3de87929c650e8b46d999d698a16eadfc9e0b06a985",
+        "event_1700e9907d7f71c5694d4092057ff1718e4db9b25936f6017939ed1a9e8975f6",
+        "event_f78c9db3411a7ffe8b9daca2820c45cf88e812483b0a1490778ed5b4e364cba3",
+        "event_ae50c3708097b0ffc016d3fd0245f37b152bd1cee62c71bc5b28e8a1261c9c52",
+        "event_e9eb63ea366d5170256e556f44ecfec272bb99d8bc22b23512fdca356d711149",
+        "event_c4957323ffacdb5a914bd20a0322d8865f2836f82ca789ab748a9b39a75f0723",
+        "event_9e71a23e7fa0ec59d4fbebe71859f867e974840ca27f59f6b882ea652150d48c",
+        "event_b3bace4e1a5ff089c7026cf300cde2bd0ef3b1edf1e6e629a75fad16ced2b2f1"
+      ],
+      "method_status_counts": {
+        "kronos_base": {
+          "scored": 64
+        },
+        "no_propagation": {
+          "scored": 64
+        },
+        "btc_beta": {
+          "scored": 64
+        },
+        "historical_30": {
+          "scored": 64
+        }
+      },
+      "scores": {
+        "kronos_base": {
+          "max_drawdown": {
+            "event_count": 64,
+            "mae": 0.0027579108180143894,
+            "mae_bps": 27.579108180143894,
+            "spearman": 0.40279017857142857,
+            "spearman_defined_events": 64,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.5208333333333333
+          },
+          "volatility": {
+            "event_count": 64,
+            "mae": 0.0019110683874779604,
+            "mae_bps": 19.110683874779603,
+            "spearman": 0.686123511904762,
+            "spearman_defined_events": 64,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.671875
+          }
+        },
+        "no_propagation": {
+          "max_drawdown": {
+            "event_count": 64,
+            "mae": 0.004628517890412768,
+            "mae_bps": 46.28517890412768,
+            "spearman": null,
+            "spearman_defined_events": 0,
+            "spearman_undefined_events": 64,
+            "spearman_undefined_reasons": {
+              "constant_prediction": 64
+            },
+            "top3_recall_expected": 0.337890625
+          },
+          "volatility": {
+            "event_count": 64,
+            "mae": 0.004689881454595552,
+            "mae_bps": 46.898814545955524,
+            "spearman": null,
+            "spearman_defined_events": 0,
+            "spearman_undefined_events": 64,
+            "spearman_undefined_reasons": {
+              "constant_prediction": 64
+            },
+            "top3_recall_expected": 0.337890625
+          }
+        },
+        "btc_beta": {
+          "max_drawdown": {
+            "event_count": 64,
+            "mae": 0.0029200038873182102,
+            "mae_bps": 29.200038873182102,
+            "spearman": 0.5385044642857143,
+            "spearman_defined_events": 64,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.5885416666666666
+          },
+          "volatility": {
+            "event_count": 64,
+            "mae": 0.0019229731257243592,
+            "mae_bps": 19.229731257243593,
+            "spearman": 0.7031994047619048,
+            "spearman_defined_events": 64,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.65625
+          }
+        },
+        "historical_30": {
+          "max_drawdown": {
+            "event_count": 64,
+            "mae": 0.0031247181195956397,
+            "mae_bps": 31.247181195956397,
+            "spearman": 0.5005952380952381,
+            "spearman_defined_events": 64,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.53125
+          },
+          "volatility": {
+            "event_count": 64,
+            "mae": 0.0012070957723670688,
+            "mae_bps": 12.070957723670686,
+            "spearman": 0.8259672619047619,
+            "spearman_defined_events": 64,
+            "spearman_undefined_events": 0,
+            "spearman_undefined_reasons": {},
+            "top3_recall_expected": 0.7760416666666666
+          }
+        }
+      },
+      "excluded_from_pairing": []
+    }
+  },
+  "aggregation": "Per-event asset MAE first, then equal-weight events. Every method uses the identical complete paired event set within each group.",
+  "spearman_aggregation": "Mean only over defined per-event Spearman values; defined/undefined coverage is reported separately for every method.",
+  "disclosure": "n counts events, not assets or paths. Overlapping horizons remain dependent. Systemic labels are posthoc. Descriptive exploration, not causal or calibrated forecasting evidence.",
+  "status": "complete",
+  "completed_at_utc": "2026-09-27T03:12:39.734162+00:00",
+  "event_count": 84,
+  "model_identity_unchanged": true,
+  "model_identity": {
+    "model_revision": "sha256:21b4fc9fbb7c0a778746c6f1d8decc85ce8cc1cc327dd5eec8dfaf1b7eb12f15",
+    "tokenizer_revision": "sha256:389b9657bbef946ada49bbd197aefcf0ba4c778a87903b481776af9f76cc68db",
+    "adapter_revision": "sktime-kronos-declared-assets-v4",
+    "backend": "mps",
+    "sktime_version": "1.2.0",
+    "torch_version": "2.14.0",
+    "sampling": {
+      "T": 1.0,
+      "top_k": 0,
+      "top_p": 0.9,
+      "sample_count": 1,
+      "verbose": false
+    },
+    "model_timestamp": "UTC candle start",
+    "output_timestamp": "UTC candle end",
+    "output_policy": "containment-expand-v1",
+    "volume_policy": "unused-volume-audit-v1"
+  },
+  "model_calls": 84,
+  "end_to_end_seconds": 594.1339419579599,
+  "per_event_seconds": [
+    7.691696624970064,
+    5.560311333043501,
+    5.51770762517117,
+    5.507568415952846,
+    5.519047084031627,
+    5.531107624992728,
+    5.598163458984345,
+    5.522417916916311,
+    5.536409208085388,
+    5.548096500104293,
+    5.551798499887809,
+    5.531007209094241,
+    5.568798332940787,
+    5.568679374875501,
+    5.5281454580836,
+    5.517510375007987,
+    5.528071542037651,
+    5.549877666868269,
+    7.1111219169106334,
+    8.053513625171036,
+    6.6459994171746075,
+    5.553294624900445,
+    5.520819416036829,
+    5.524538167053834,
+    5.632540915859863,
+    5.505893167108297,
+    5.585479749832302,
+    5.488714250037447,
+    5.244782583089545,
+    5.557272708043456,
+    5.296428416855633,
+    5.220443791011348,
+    5.171982415951788,
+    5.21919724997133,
+    5.19383095880039,
+    5.202382292132825,
+    5.1039732079952955,
+    5.208382667042315,
+    5.205255208071321,
+    5.201267333002761,
+    5.200047583086416,
+    5.429762500105426,
+    7.3945463330019265,
+    13.186077124904841,
+    13.14300495898351,
+    13.226302250055596,
+    13.218176709022373,
+    13.131342583103105,
+    13.15838212496601,
+    13.181405707960948,
+    13.183708166936412,
+    13.146054707933217,
+    13.234702834160998,
+    13.824922958854586,
+    14.190625875024125,
+    14.085266500012949,
+    14.031000040937215,
+    14.180876791942865,
+    13.273479708004743,
+    5.487098458921537,
+    5.480075916973874,
+    5.481564958114177,
+    5.480139791965485,
+    5.491585916141048,
+    5.472264042124152,
+    5.4895686658564955,
+    5.495625999988988,
+    5.47536287503317,
+    5.48577095894143,
+    5.49376858305186,
+    5.479855499928817,
+    5.483684916980565,
+    5.525278666056693,
+    5.497859583934769,
+    5.498451083898544,
+    5.465436375001445,
+    5.175317957997322,
+    5.218147999839857,
+    5.156620832858607,
+    5.176829666830599,
+    5.193353875074536,
+    5.154151416150853,
+    5.150340875145048,
+    5.133712459122762
+  ],
+  "predict_config": {
+    "lookback": 256,
+    "horizon": 30,
+    "path_count": 1,
+    "seed": 20260926
+  }
+}

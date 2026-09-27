@@ -1,0 +1,90 @@
+{
+  "source": {
+    "path": "research/shock_radar/omission/missed_assets.csv",
+    "sha256": "5d474e9904f01987b34619d2c1e74515a0a74b74432ec8dd83eddb4514add78e"
+  },
+  "formula": "(actual - weakest_selected_actual) / weakest_selected_actual",
+  "quantile_method": "linear interpolation at (n-1)*q; unrounded ratios; zero denominators reported separately",
+  "metrics": [
+    {
+      "key": "volatility",
+      "label": "波动",
+      "n": 282,
+      "finite_n": 282,
+      "zero_denominator_count": 0,
+      "p50": 0.14007643842840395,
+      "p75": 0.303540527507388,
+      "p90": 0.4807292102463023
+    },
+    {
+      "key": "max_drawdown",
+      "label": "回撤",
+      "n": 456,
+      "finite_n": 456,
+      "zero_denominator_count": 0,
+      "p50": 0.32929122651001563,
+      "p75": 0.6517838346233661,
+      "p90": 1.0539237458124189
+    }
+  ],
+  "cases": [
+    {
+      "event_id": "event_9450b40f521cc9ccc57291792b30c18b635ceed68ea03c0f34672ab2488a6faa",
+      "timestamp": "2026-01-19T22:14:00Z",
+      "month": "2026-01",
+      "metric": "volatility",
+      "asset": "AVAX",
+      "selected_assets": [
+        "ADA",
+        "ETH",
+        "LINK"
+      ],
+      "weakest_selected_actual": 0.0037886618000646014,
+      "actual": 0.005612202163960596,
+      "excess_bps": 18.235403638959948,
+      "ratio": 0.4813151609005853,
+      "label": "波动",
+      "selection": "接近 p90 的真实记录"
+    },
+    {
+      "event_id": "event_6235cb6ca7324ceb68c1fdab1e3b7a3c0234705b57a0de4c88bfc45d9aacac79",
+      "timestamp": "2026-01-20T22:34:00Z",
+      "month": "2026-01",
+      "metric": "max_drawdown",
+      "asset": "DOGE",
+      "selected_assets": [
+        "LTC",
+        "AVAX",
+        "BTC"
+      ],
+      "weakest_selected_actual": 0.0026833631484793176,
+      "actual": 0.005486968449931413,
+      "excess_bps": 28.036053014520956,
+      "ratio": 1.0448102423411905,
+      "label": "回撤",
+      "selection": "接近 p90 的真实记录"
+    },
+    {
+      "event_id": "event_a45ab0dc6413874a824daf46a3e6b1f4d3c34d216083d7e767e9b5ece9366111",
+      "timestamp": "2026-01-30T01:42:00Z",
+      "month": "2026-01",
+      "metric": "max_drawdown",
+      "asset": "LTC",
+      "selected_assets": [
+        "XRP",
+        "ETH",
+        "LINK"
+      ],
+      "weakest_selected_actual": 0.01655824524851939,
+      "actual": 0.03632183908045973,
+      "excess_bps": 197.63593831940344,
+      "ratio": 1.1935802094553207,
+      "label": "回撤",
+      "selection": "回撤绝对超出幅度最大的记录"
+    }
+  ],
+  "conclusion": "两项中位数都超过10%；不能把超车概括为边缘差异。回撤p90的相对超出量超过100%，尾部存在明显遗漏。",
+  "population_note": "仅对已经超车的资产×事件×指标记录等权统计，不是全部事件的分布。",
+  "case_selection_note": "案例按已实现结果选取，用于解释幅度，不作为独立验证样本；近p90记录不等于插值得到的精确分位点。",
+  "publication_status": "requires_user_confirmation_before_pitch"
+}

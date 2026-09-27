@@ -1,0 +1,399 @@
+{
+  "created_at_utc": "2026-09-27T02:57:04.465416+00:00",
+  "status": "no_k_meets_frozen_count_range",
+  "selected_k": null,
+  "selection_rule": "eligible episodes in [20,60]; closest to 40; ties choose larger k; otherwise selected_k=null",
+  "target_count": [
+    20,
+    60
+  ],
+  "grid": [
+    {
+      "k": 3,
+      "raw_candidate_count": 7699,
+      "retained_trigger_count": 3161,
+      "suppressed_candidate_count": 4538,
+      "zero_sigma_count": 0,
+      "merged_event_count": 1058,
+      "eligible_event_count": 1053,
+      "excluded_event_count": 5,
+      "per_asset": {
+        "BTC": {
+          "raw_candidate_count": 854,
+          "retained_trigger_count": 333,
+          "suppressed_candidate_count": 521,
+          "zero_sigma_count": 0
+        },
+        "ETH": {
+          "raw_candidate_count": 877,
+          "retained_trigger_count": 339,
+          "suppressed_candidate_count": 538,
+          "zero_sigma_count": 0
+        },
+        "SOL": {
+          "raw_candidate_count": 773,
+          "retained_trigger_count": 311,
+          "suppressed_candidate_count": 462,
+          "zero_sigma_count": 0
+        },
+        "BNB": {
+          "raw_candidate_count": 717,
+          "retained_trigger_count": 294,
+          "suppressed_candidate_count": 423,
+          "zero_sigma_count": 0
+        },
+        "XRP": {
+          "raw_candidate_count": 715,
+          "retained_trigger_count": 304,
+          "suppressed_candidate_count": 411,
+          "zero_sigma_count": 0
+        },
+        "DOGE": {
+          "raw_candidate_count": 889,
+          "retained_trigger_count": 327,
+          "suppressed_candidate_count": 562,
+          "zero_sigma_count": 0
+        },
+        "ADA": {
+          "raw_candidate_count": 736,
+          "retained_trigger_count": 316,
+          "suppressed_candidate_count": 420,
+          "zero_sigma_count": 0
+        },
+        "AVAX": {
+          "raw_candidate_count": 699,
+          "retained_trigger_count": 304,
+          "suppressed_candidate_count": 395,
+          "zero_sigma_count": 0
+        },
+        "LINK": {
+          "raw_candidate_count": 604,
+          "retained_trigger_count": 287,
+          "suppressed_candidate_count": 317,
+          "zero_sigma_count": 0
+        },
+        "LTC": {
+          "raw_candidate_count": 835,
+          "retained_trigger_count": 346,
+          "suppressed_candidate_count": 489,
+          "zero_sigma_count": 0
+        }
+      }
+    },
+    {
+      "k": 4,
+      "raw_candidate_count": 1986,
+      "retained_trigger_count": 1095,
+      "suppressed_candidate_count": 891,
+      "zero_sigma_count": 0,
+      "merged_event_count": 437,
+      "eligible_event_count": 435,
+      "excluded_event_count": 2,
+      "per_asset": {
+        "BTC": {
+          "raw_candidate_count": 221,
+          "retained_trigger_count": 126,
+          "suppressed_candidate_count": 95,
+          "zero_sigma_count": 0
+        },
+        "ETH": {
+          "raw_candidate_count": 251,
+          "retained_trigger_count": 135,
+          "suppressed_candidate_count": 116,
+          "zero_sigma_count": 0
+        },
+        "SOL": {
+          "raw_candidate_count": 218,
+          "retained_trigger_count": 116,
+          "suppressed_candidate_count": 102,
+          "zero_sigma_count": 0
+        },
+        "BNB": {
+          "raw_candidate_count": 175,
+          "retained_trigger_count": 91,
+          "suppressed_candidate_count": 84,
+          "zero_sigma_count": 0
+        },
+        "XRP": {
+          "raw_candidate_count": 182,
+          "retained_trigger_count": 107,
+          "suppressed_candidate_count": 75,
+          "zero_sigma_count": 0
+        },
+        "DOGE": {
+          "raw_candidate_count": 249,
+          "retained_trigger_count": 125,
+          "suppressed_candidate_count": 124,
+          "zero_sigma_count": 0
+        },
+        "ADA": {
+          "raw_candidate_count": 163,
+          "retained_trigger_count": 96,
+          "suppressed_candidate_count": 67,
+          "zero_sigma_count": 0
+        },
+        "AVAX": {
+          "raw_candidate_count": 177,
+          "retained_trigger_count": 96,
+          "suppressed_candidate_count": 81,
+          "zero_sigma_count": 0
+        },
+        "LINK": {
+          "raw_candidate_count": 123,
+          "retained_trigger_count": 78,
+          "suppressed_candidate_count": 45,
+          "zero_sigma_count": 0
+        },
+        "LTC": {
+          "raw_candidate_count": 227,
+          "retained_trigger_count": 125,
+          "suppressed_candidate_count": 102,
+          "zero_sigma_count": 0
+        }
+      }
+    },
+    {
+      "k": 5,
+      "raw_candidate_count": 694,
+      "retained_trigger_count": 429,
+      "suppressed_candidate_count": 265,
+      "zero_sigma_count": 0,
+      "merged_event_count": 181,
+      "eligible_event_count": 179,
+      "excluded_event_count": 2,
+      "per_asset": {
+        "BTC": {
+          "raw_candidate_count": 79,
+          "retained_trigger_count": 49,
+          "suppressed_candidate_count": 30,
+          "zero_sigma_count": 0
+        },
+        "ETH": {
+          "raw_candidate_count": 104,
+          "retained_trigger_count": 64,
+          "suppressed_candidate_count": 40,
+          "zero_sigma_count": 0
+        },
+        "SOL": {
+          "raw_candidate_count": 74,
+          "retained_trigger_count": 46,
+          "suppressed_candidate_count": 28,
+          "zero_sigma_count": 0
+        },
+        "BNB": {
+          "raw_candidate_count": 51,
+          "retained_trigger_count": 32,
+          "suppressed_candidate_count": 19,
+          "zero_sigma_count": 0
+        },
+        "XRP": {
+          "raw_candidate_count": 50,
+          "retained_trigger_count": 31,
+          "suppressed_candidate_count": 19,
+          "zero_sigma_count": 0
+        },
+        "DOGE": {
+          "raw_candidate_count": 97,
+          "retained_trigger_count": 58,
+          "suppressed_candidate_count": 39,
+          "zero_sigma_count": 0
+        },
+        "ADA": {
+          "raw_candidate_count": 59,
+          "retained_trigger_count": 37,
+          "suppressed_candidate_count": 22,
+          "zero_sigma_count": 0
+        },
+        "AVAX": {
+          "raw_candidate_count": 58,
+          "retained_trigger_count": 35,
+          "suppressed_candidate_count": 23,
+          "zero_sigma_count": 0
+        },
+        "LINK": {
+          "raw_candidate_count": 46,
+          "retained_trigger_count": 30,
+          "suppressed_candidate_count": 16,
+          "zero_sigma_count": 0
+        },
+        "LTC": {
+          "raw_candidate_count": 76,
+          "retained_trigger_count": 47,
+          "suppressed_candidate_count": 29,
+          "zero_sigma_count": 0
+        }
+      }
+    },
+    {
+      "k": 6,
+      "raw_candidate_count": 305,
+      "retained_trigger_count": 216,
+      "suppressed_candidate_count": 89,
+      "zero_sigma_count": 0,
+      "merged_event_count": 85,
+      "eligible_event_count": 84,
+      "excluded_event_count": 1,
+      "per_asset": {
+        "BTC": {
+          "raw_candidate_count": 32,
+          "retained_trigger_count": 22,
+          "suppressed_candidate_count": 10,
+          "zero_sigma_count": 0
+        },
+        "ETH": {
+          "raw_candidate_count": 45,
+          "retained_trigger_count": 34,
+          "suppressed_candidate_count": 11,
+          "zero_sigma_count": 0
+        },
+        "SOL": {
+          "raw_candidate_count": 33,
+          "retained_trigger_count": 20,
+          "suppressed_candidate_count": 13,
+          "zero_sigma_count": 0
+        },
+        "BNB": {
+          "raw_candidate_count": 24,
+          "retained_trigger_count": 18,
+          "suppressed_candidate_count": 6,
+          "zero_sigma_count": 0
+        },
+        "XRP": {
+          "raw_candidate_count": 24,
+          "retained_trigger_count": 19,
+          "suppressed_candidate_count": 5,
+          "zero_sigma_count": 0
+        },
+        "DOGE": {
+          "raw_candidate_count": 44,
+          "retained_trigger_count": 29,
+          "suppressed_candidate_count": 15,
+          "zero_sigma_count": 0
+        },
+        "ADA": {
+          "raw_candidate_count": 28,
+          "retained_trigger_count": 20,
+          "suppressed_candidate_count": 8,
+          "zero_sigma_count": 0
+        },
+        "AVAX": {
+          "raw_candidate_count": 27,
+          "retained_trigger_count": 19,
+          "suppressed_candidate_count": 8,
+          "zero_sigma_count": 0
+        },
+        "LINK": {
+          "raw_candidate_count": 19,
+          "retained_trigger_count": 13,
+          "suppressed_candidate_count": 6,
+          "zero_sigma_count": 0
+        },
+        "LTC": {
+          "raw_candidate_count": 29,
+          "retained_trigger_count": 22,
+          "suppressed_candidate_count": 7,
+          "zero_sigma_count": 0
+        }
+      }
+    }
+  ],
+  "assets": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "XRP",
+    "DOGE",
+    "ADA",
+    "AVAX",
+    "LINK",
+    "LTC"
+  ],
+  "provenance": {
+    "month": "2026-01",
+    "role": "training_and_exploration",
+    "manifest_path": "research/data-probe/binance-2026-01/manifest.json",
+    "manifest_sha256": "b99505aa97580ccad9220e7eabc95ef988415e24ca804cc28fcf6198bc8e5d4a",
+    "files": [
+      {
+        "asset": "BTC",
+        "csv_filename": "BTCUSDT-1m-2026-01.csv",
+        "csv_sha256": "c0e8f1efcef02f5cfde516f7561037617dc4ec466ebf0b43d0eb9a5cdbb4eaf0"
+      },
+      {
+        "asset": "ETH",
+        "csv_filename": "ETHUSDT-1m-2026-01.csv",
+        "csv_sha256": "5edff736670986da3af918386b7cc6466374910b7bb8d724d8da2c14903885ce"
+      },
+      {
+        "asset": "SOL",
+        "csv_filename": "SOLUSDT-1m-2026-01.csv",
+        "csv_sha256": "b6bc437b149170d902d31e5f18165d71680e862f91f897fdb91b7dc6bf65633c"
+      },
+      {
+        "asset": "BNB",
+        "csv_filename": "BNBUSDT-1m-2026-01.csv",
+        "csv_sha256": "55392e8a78e5d21f89e853ae149ecca25b7131d3030d23471816f7d028c773d0"
+      },
+      {
+        "asset": "XRP",
+        "csv_filename": "XRPUSDT-1m-2026-01.csv",
+        "csv_sha256": "b89bf2ac924d90ba87e84f41f76a2d3cb4bf771186ce934f1300be9921fac5a9"
+      },
+      {
+        "asset": "DOGE",
+        "csv_filename": "DOGEUSDT-1m-2026-01.csv",
+        "csv_sha256": "1a41c11e4bdd5fa58d7dfba935577b115857e1c0298a9dfbe2dd18f510ca233e"
+      },
+      {
+        "asset": "ADA",
+        "csv_filename": "ADAUSDT-1m-2026-01.csv",
+        "csv_sha256": "60544781e83a0644fb5add9c09d1a58858c23ffdfebd77504238d31fe431f6a0"
+      },
+      {
+        "asset": "AVAX",
+        "csv_filename": "AVAXUSDT-1m-2026-01.csv",
+        "csv_sha256": "8722d796307e63848095ee19f8d49825942e21977e48853d6abd62040e7dc1a8"
+      },
+      {
+        "asset": "LINK",
+        "csv_filename": "LINKUSDT-1m-2026-01.csv",
+        "csv_sha256": "9de69bb341ee67e684cee265bc3e0ce8a3497d42b120d61fc2fbe5ea0456cb6b"
+      },
+      {
+        "asset": "LTC",
+        "csv_filename": "LTCUSDT-1m-2026-01.csv",
+        "csv_sha256": "5aef7e8eb806345a1ad3c3d1132076a5a23197c25170c95594f6d96321d44b29"
+      }
+    ],
+    "rows_per_asset": 44640,
+    "source": "Binance Spot monthly klines 2026-01",
+    "quote_currency": "USDT"
+  },
+  "model_calls": 0,
+  "catalogs": {
+    "3": {
+      "json": "catalog-k3.json",
+      "sha256": "4b4c136be42f8f9eb25b9d80823aa09512e8961282c2117d34b83a455f4cb0f7"
+    },
+    "4": {
+      "json": "catalog-k4.json",
+      "sha256": "9af042d9f4b86aa0630bee0af9bdae5b8d88940a88426df9839d75dc45b4caec"
+    },
+    "5": {
+      "json": "catalog-k5.json",
+      "sha256": "1e6378a734756e9d485bd2076ced900127cfb4759683bb161ed41660454951cf"
+    },
+    "6": {
+      "json": "catalog-k6.json",
+      "sha256": "6f36793ba6dbf4c0343a5b4a3b2568b0c6d8ff770356a0398bd8c9a258eba5c2"
+    }
+  },
+  "definition_sha256": "1f7cdb8a8b1f9ab64c6bb9e74f43422102433651ab942064f6a0899952269c27",
+  "code_sha256": {
+    "io.py": "a547ff7ea6fcaf3f27e03d807c5d8b8d118b2bb4391eb5c408cd182e17259e33",
+    "detection.py": "fca8c915c2a75daf1d2b28a8a08c631df34132358579f0c80635afc9d1c6381e",
+    "calibration.py": "284d095a89de0bf547d6b711a61f955dbe15d5ad2c578de1945a8c0dff4467d2"
+  },
+  "disclosure": "Count-only January exploration; no transmission outcomes used for k selection. Edge exclusions are based solely on fixed input/target timestamps. Systemic is a posthoc label, not online knowledge."
+}

@@ -1,0 +1,122 @@
+{
+  "protocol_version": "lora-a-v2.1",
+  "seed": 20260926,
+  "assets": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "XRP",
+    "ADA",
+    "DOGE",
+    "AVAX",
+    "LINK",
+    "LTC"
+  ],
+  "tiers": {
+    "major": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "BNB"
+    ],
+    "small": [
+      "XRP",
+      "ADA",
+      "DOGE",
+      "AVAX",
+      "LINK",
+      "LTC"
+    ]
+  },
+  "fixed_small_pair": [
+    "AVAX",
+    "LINK"
+  ],
+  "train_month": "2026-01",
+  "validation_month": "2026-02",
+  "test_month": "2026-03",
+  "lookback": 256,
+  "horizon": 30,
+  "stride": 30,
+  "path_count": 1,
+  "sampling": {
+    "T": 1.0,
+    "top_k": 0,
+    "top_p": 0.9,
+    "sample_count": 1
+  },
+  "batch_size": 8,
+  "max_epochs": 2,
+  "lr": 4e-05,
+  "weight_decay": 0.1,
+  "adam_betas": [
+    0.9,
+    0.95
+  ],
+  "gradient_clip": 3.0,
+  "scheduler": "constant",
+  "rank": 4,
+  "alpha": 8,
+  "dropout": 0.1,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "out_proj"
+  ],
+  "target_scope": "predictor attention including dependency cross-attention; tokenizer frozen",
+  "loss": "official head.compute_loss two-level next-token cross entropy, all shifted positions",
+  "epoch_definition": "each asset-origin Jan1-25 stride120 window once, shuffled deterministically per epoch, no replacement",
+  "training_candles_per_window": 286,
+  "normalization": "cast OHLCVA to float32 first, then mean/std of first256 only, eps1e-5, clip5; same numerical preprocessing as installed sktime KronosPredictor",
+  "selection_metric": "small.volatility_mae",
+  "validation_frequency": "every complete epoch",
+  "patience": 1,
+  "min_delta": 0.0,
+  "checkpoint_tie_policy": "earlier epoch",
+  "ranking": "competition rank <=2, retain ties and disclose set sizes",
+  "dynamic_baseline": "std(ddof=0) of 255 log returns in 256 input closes times sqrt(30)",
+  "small_pass": "exact-set hit rate strictly greater than dynamic naive, January-frozen fixed pair, and original Kronos on complete paired grid",
+  "major_pass": "exact-set point estimate greater than or equal to dynamic naive minus0.02 on complete paired grid",
+  "mae_role": "small-tier checkpoint selection; if best February candidate MAE >= original on same300 grid then stop with interim and March sealed",
+  "intervals": {
+    "method": "paired UTC-origin-day cluster bootstrap",
+    "confidence": 0.95,
+    "replicates": 2000,
+    "seed": 20260926
+  },
+  "failure_policy": "retain all scheduled windows, report failures/coverage; incomplete paired grid prevents acceptance",
+  "cost_policy": "local only, no paid compute",
+  "train_start": "2026-01-01",
+  "train_end_exclusive": "2026-01-26",
+  "observation_start": "2026-01-26",
+  "observation_end_exclusive": "2026-02-01",
+  "train_stride": 120,
+  "evaluation_stride": 30,
+  "validation_windows": 300,
+  "test_windows": 300,
+  "observation_windows_per_day": 8,
+  "fixed_pair_policy": "maximize exact-set hits on Jan1-25 training origins, ties lexicographic asset pair; freeze before model inference",
+  "major_tolerance": 0.02,
+  "deadline_utc": "2026-09-27T11:00:00+00:00",
+  "deadline_local": "2026-09-27 07:00 America/New_York",
+  "deadline_policy": "conservative interpretation of tomorrow morning; before unseal reserve measured two-model300-window test plus20min; if insufficient produce interim without March access",
+  "timing_policy": "microbench is formal epoch1 after resetting smoke model/optimizer/RNG; count it once",
+  "observation_policy": "48 fixed calendar-only origins (8/day Jan26-31); evaluate original and each completed epoch; no checkpoint, pair or parameter selection from observation",
+  "observation_addendum": {
+    "metrics": [
+      "max_drawdown_mae",
+      "volatility_mae",
+      "volatility_top3_recall"
+    ],
+    "datasets": [
+      "February fixed300",
+      "January26-31 fixed48"
+    ],
+    "max_drawdown": "close path running-peak maximum drawdown including P0; pathwise then mean",
+    "top3_ties": "B-line expected recall with fractional inclusion at cutoff ties",
+    "relative_drawdown_mae_warning": 0.2,
+    "decision_use": "none; logs and reports only, no early stop/checkpoint/gates/loss effect"
+  }
+}

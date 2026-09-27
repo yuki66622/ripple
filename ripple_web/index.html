@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ripple：十个资产，先看三个。用真实历史行情检查每个选择的依据。" data-en-content="Ripple: ten crypto assets, three priorities. Live prices, forecasts and historical evaluation.">
+  <title data-en="Ripple · Ten assets. Focus on three.">Ripple · 十个资产，先看三个</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css?v=ui-r3">
+  <link rel="stylesheet" href="attention.css?v=vol-state-r1">
+  <script type="module" src="attention-app.mjs?v=vol-state-r1"></script>
+  <script type="module" src="ripple-panel.mjs?v=en-r1"></script>
+</head>
+<body class="attention" data-load-state="loading">
+  <a class="skip-link" href="#focus" data-en="Skip to content">跳到主要内容</a>
+  <nav class="nav" aria-label="页面导航" data-en-aria-label="Page navigation">
+    <a class="mark" href="#focus">Ripple <span data-en="· Focus">· 注意力减法</span></a>
+    <div class="links"><a href="#focus" data-view="live" data-en="Asset ranking">资产排序</a><a href="#duration-panel" data-view="live" data-en="Volatility">波动状态</a><a href="#market-overview-panel" data-view="live" data-en="Prices &amp; forecasts">走势与预测</a><a href="#history-radar-panel" data-view="history" hidden data-en="Historical replay">历史回放</a><a href="#shock-ripple" data-view="history" hidden data-en="Shock ripple map">涟漪冲击图</a><a href="#evaluation" data-view="history" hidden data-en="Evaluation results">真实测评依据</a></div>
+    <a id="language-switch" class="language-switch" href="?lang=en" lang="en" hreflang="en">English</a>
+  </nav>
+  <main>
+    <div class="source-bar" role="group" aria-label="选择页面内容" data-en-aria-label="Choose view"><button id="mode-live" type="button" aria-pressed="true" data-en="Live markets">实时行情</button><button id="mode-history" type="button" aria-pressed="false" data-en="Methods &amp; history">方法与历史分析</button><span id="live-status" role="status" data-en="Connecting to Binance…">正在连接 Binance…</span></div>
+    <div id="loading-message" class="attention-section" role="status" data-en="Loading live prices…">正在读取真实行情…</div>
+    <noscript><p class="attention-section" data-en="Enable JavaScript to select events and explore the replay.">请启用 JavaScript 以选择历史事件并检查回放。</p></noscript>
+    <div id="ready-content" hidden>
+      <section id="focus" class="attention-section attention-intro" aria-labelledby="focus-title">
+        <p id="data-mode-label" class="eyebrow" data-en="Live markets">实时行情</p>
+        <div class="focus-heading"><h1 id="focus-title"><span data-en="">当前 </span><select id="asset-count" aria-label="资产数量" data-en-aria-label="Number of assets" title="演示版支持10个资产" data-en-title="This demo supports ten assets"><option value="10">10</option><option disabled data-en="Other sizes (not yet supported)">其他数量（待支持）</option></select><span data-en=" assets. Focus on "> 个资产，先看这 </span><select id="priority-count" aria-label="优先数量" data-en-aria-label="Number of priority assets" title="演示版支持优先3个" data-en-title="This demo prioritizes three assets"><option value="3">3</option><option disabled data-en="Other sizes (not yet supported)">其他数量（待支持）</option></select><span data-en="."> 个。</span></h1><div class="refresh-controls"><button id="live-refresh" type="button" data-en="Refresh prices">刷新行情</button><label for="refresh-interval" data-en="Auto-refresh">自动更新</label><select id="refresh-interval" aria-label="自动更新间隔" data-en-aria-label="Auto-refresh interval"><option value="60000" data-en="Every minute">每 1 分钟</option><option value="300000" selected data-en="Every 5 min">每 5 分钟</option><option value="600000" data-en="Every 10 min">每 10 分钟</option><option value="1800000" data-en="Every 30 min">每 30 分钟</option></select></div></div>
+        <p class="minor selection-note" id="event-time"></p>
+        <div id="asset-universe" class="asset-universe" role="group" aria-label="十个资产的关注状态" data-en-aria-label="Priority status for ten assets"></div>
+        <p class="minor ranking-scope" data-en="Volatility ranking · past 30 min">过去30分钟波动率排名</p>
+        <div class="attention-columns">
+        <div class="priority-column"><h2 class="ranking-heading" data-en="Priority">优先</h2><div id="focus-list" class="focus-list" role="group" aria-label="优先查看的三个资产" data-en-aria-label="Three priority assets"></div></div>
+        <aside id="deferred" class="deferred-column" aria-labelledby="deferred-title"><h2 id="deferred-title" class="ranking-heading" data-en="Other seven">其余七个</h2><table class="deferred-table"><thead><tr><th scope="col" data-en="Rank">排名</th><th scope="col" data-en="Asset">资产</th><th scope="col" data-en="Volatility">波动率</th></tr></thead><tbody id="deferred-rows"></tbody></table></aside>
+        </div>
+        <p class="minor" id="event-context"></p>
+        <p class="minor" id="tie-note" hidden data-en="Ties at third place are broken alphabetically to show three assets. A tie does not indicate a difference in risk.">第三名存在并列：为保持三个展示名额，按资产名称排序。并列资产没有风险高低之分。</p>
+      </section>
+      <section id="evidence" class="attention-section evidence-section" aria-label="行情、预测与测评" data-en-aria-label="Prices, forecasts and evaluation">
+        <div id="duration-panel" class="duration-panel" aria-label="历史回落参考" data-en-aria-label="Historical recovery reference"></div>
+        <section id="volatility-state-panel" class="volatility-state-panel" aria-label="当前波动状态" data-en-aria-label="Current volatility" hidden></section>
+        <h1 id="method-heading" class="analysis-heading" hidden data-en="Methods &amp; history">方法与历史分析</h1>
+        <section id="shock-ripple" class="shock-ripple-panel" aria-labelledby="shock-ripple-title">
+          <div class="split">
+            <div class="col">
+              <p class="eyebrow" data-en="Historical shocks · January 2026">历史冲击 · 2026年1月</p>
+              <h2 id="shock-ripple-title" data-en="Shock ripple map">涟漪冲击图</h2>
+              <p id="shock-ripple-summary" class="shock-ripple-summary" data-en="Loading the shock map…">正在读取原来的冲击图…</p>
+              <div class="shock-ripple-controls"><label><span data-en="Starting asset ">图谱起点 </span><select id="shock-ripple-source" aria-label="涟漪图起点" data-en-aria-label="Starting asset for the ripple" disabled></select></label><button id="shock-ripple-replay" type="button" disabled data-en="Restart ripple">重新播放涟漪</button></div>
+              <div class="chains"><p class="minor" data-en="Three sequences involving the most assets">涉及资产最多的3段时序</p><ol id="shock-ripple-chains"></ol></div>
+            </div>
+            <div class="ripple" id="shock-ripple-map" aria-live="polite"></div>
+          </div>
+          <p class="minor" data-en="Sequence in time, not causation.">时间先后关联，非因果。</p>
+        </section>
+        <section id="history-radar-panel" class="historical-overview" aria-labelledby="history-radar-title" hidden>
+          <h2 id="history-radar-title"></h2>
+          <p id="history-radar-context" class="minor"></p>
+          <div class="event-bar" id="history-event-bar"><div class="events" id="event-options" role="group" aria-label="选择历史事件" data-en-aria-label="Select a historical event"></div></div>
+          <div id="history-radar" class="radar"></div>
+        </section>
+        <div class="market-overview-panel" id="market-overview-panel"><div class="market-overview-heading"><h3 data-en="Live prices">实时走势</h3><span id="prediction-status" class="minor" role="status" data-en="Forecasting automatically…">正在自动预测…</span></div><p id="overview-scope" class="minor"></p><div id="market-overview"></div></div>
+        <div id="asset-detail">
+        <button type="button" id="history-detail-close" class="text-button" hidden data-en="Back to all ten assets ↑">返回十资产总览 ↑</button>
+        <div id="evidence-chart" class="evidence-top"><div><p class="eyebrow" data-en="Prices &amp; forecasts">行情与预测</p><h2 id="evidence-title" tabindex="-1"></h2><p class="minor" id="evidence-context"></p></div><label><span data-en="Inspect asset">检查资产</span><select id="evidence-asset" aria-label="检查资产" data-en-aria-label="Inspect asset"></select></label></div>
+        <p class="window-evidence" id="window-reason"></p>
+        <div class="replay-panel">
+          <div class="risk-readings"><div><p id="model-title" data-en="Model estimate · next 30 min drawdown">模型估计 · 未来 30 分钟回撤</p><strong id="model-mdd"></strong><p class="minor" id="model-range"></p></div><div><p id="actual-scope"></p><strong id="actual-mdd"></strong></div></div>
+          <div id="history-controls" class="attention-controls" role="group" aria-label="历史回放控制" data-en-aria-label="Historical replay controls" hidden><button type="button" id="replay-play" aria-pressed="false" data-en="Play replay">播放回放</button><button type="button" id="replay-next" data-en="Advance 5 min">前进 5 分钟</button><button type="button" id="replay-all" data-en="Show full result">查看完整结果</button><button type="button" id="replay-reset" data-en="Back to shock">回到冲击时刻</button></div>
+          <label id="history-timeline" class="timeline" for="replay-time" hidden><span data-en="Actuals revealed through">实际已揭示至</span><input id="replay-time" type="range" min="0" max="30" step="1" value="0" aria-label="回放已揭示分钟" data-en-aria-label="Minutes of actual prices revealed"><output id="replay-minute" data-en="Shock time">冲击时刻</output><button type="button" id="replay-restart" data-en="Replay">重新播放</button></label>
+          <div id="attention-replay" class="attention-replay"></div><div id="attention-legend" class="legend"></div>
+          <div class="outcome"><p id="selection-outcome"></p><button id="outcome-inspect" class="text-button" type="button" hidden></button></div>
+        </div>
+        </div>
+        <p id="load-status" class="minor load-notice" role="status"></p><button id="load-retry" type="button" class="text-button" hidden data-en="Reload evaluation">重新读取评测</button>
+        <details id="source-details-block" class="source-details"><summary data-en="Data &amp; definitions">数据来源与计算口径</summary><p id="source-details"></p></details>
+      </section>
+    </div>
+    <section id="research-section" class="attention-section evidence-section research-section" aria-label="历史测评与验收" data-en-aria-label="Historical evaluation and validation" hidden>
+      <div id="research-evidence"></div>
+      <footer class="footer"><a href="#method-heading" data-en="Back to methods &amp; history ↑">回到方法与历史分析 ↑</a></footer>
+    </section>
+  </main>
+</body>
+</html>

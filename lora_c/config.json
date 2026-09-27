@@ -1,0 +1,112 @@
+{
+  "protocol_version": "lora-c-v1",
+  "seed": 20260926,
+  "assets": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "XRP",
+    "ADA",
+    "DOGE",
+    "AVAX",
+    "LINK",
+    "LTC"
+  ],
+  "tiers": {
+    "major": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "BNB"
+    ],
+    "small": [
+      "XRP",
+      "ADA",
+      "DOGE",
+      "AVAX",
+      "LINK",
+      "LTC"
+    ]
+  },
+  "train_month": "2026-01",
+  "validation_month": "2026-04",
+  "test_month": "2026-05",
+  "lookback": 256,
+  "horizon": 30,
+  "stride": 30,
+  "path_count": 1,
+  "sampling": {
+    "T": 1.0,
+    "top_k": 0,
+    "top_p": 0.9,
+    "sample_count": 1
+  },
+  "batch_size": 8,
+  "max_epochs": 2,
+  "lr": 4e-05,
+  "weight_decay": 0.1,
+  "adam_betas": [
+    0.9,
+    0.95
+  ],
+  "gradient_clip": 3.0,
+  "scheduler": "constant",
+  "rank": 4,
+  "alpha": 8,
+  "dropout": 0.1,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "out_proj"
+  ],
+  "target_scope": "predictor attention including dependency cross-attention; tokenizer frozen",
+  "loss": "official head.compute_loss two-level next-token cross entropy, all shifted positions",
+  "epoch_definition": "each asset-origin Jan1-25 stride120 window once, shuffled deterministically per epoch, no replacement",
+  "training_candles_per_window": 286,
+  "normalization": "cast OHLCVA to float32 first, then mean/std of first256 only, eps1e-5, clip5; same numerical preprocessing as installed sktime KronosPredictor",
+  "selection_metric": "small.max_drawdown_mae",
+  "validation_frequency": "every complete epoch",
+  "patience": 1,
+  "min_delta": 0.0,
+  "checkpoint_tie_policy": "earlier epoch",
+  "ranking": "competition rank <=2, retain ties and disclose set sizes",
+  "dynamic_baseline": "std(ddof=0) of 255 log returns in 256 input closes times sqrt(30)",
+  "intervals": {
+    "method": "paired UTC-origin-day cluster bootstrap",
+    "confidence": 0.95,
+    "replicates": 2000,
+    "seed": 20260926
+  },
+  "failure_policy": "retain all scheduled windows, report failures/coverage; incomplete paired grid prevents acceptance",
+  "cost_policy": "local only, no paid compute",
+  "train_start": "2026-01-01",
+  "train_end_exclusive": "2026-01-26",
+  "train_stride": 120,
+  "evaluation_stride": 30,
+  "validation_windows": 300,
+  "test_windows": 300,
+  "timing_policy": "fresh smoke discarded, full reset; measured epoch1 is formal epoch1; no epoch repeats",
+  "selection_gate": "small candidate MDD MAE strictly lower than original on complete300; any epoch major MDD MAE > original*1.2 stops before May",
+  "acceptance_gate": "small candidate MDD MAE strictly lower than original and historical_30 on complete300",
+  "major_drawdown_stop_relative": 0.2,
+  "major_zero_reference": "relative=null; candidate>0 stops; both zero does not stop",
+  "historical_30_baseline": "MDD of last31 input closes (30 returns), scalar persistence",
+  "ranking_role": "volatility Top2 and volatility MAE record only, never decision",
+  "publication_policy": "no pitch or resume use without Yuki explicit personal confirmation",
+  "data_month_allowlist": [
+    "2026-01",
+    "2026-04",
+    "2026-05"
+  ],
+  "sealed_months_untouched": [
+    "2026-06",
+    "2026-07",
+    "2026-08"
+  ],
+  "original_A_artifacts": "read-only source code reuse; no old weights or February/March data",
+  "observation_policy": "C records per-epoch April metrics; no added January observation inference",
+  "max_wall_seconds": 21600,
+  "wall_time_policy": "six-hour job safety cap; if insufficient room for complete May based on measured inference cost plus20min, interim without unseal; no automated restart"
+}
