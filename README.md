@@ -8,6 +8,8 @@ Ripple monitors ten assets, prioritizes three using observed volatility, and pro
 
 [Demo video](docs/Ripple-demo.mp4)
 
+[Full experiment record: methods, results, failures, and limitations](docs/EXPERIMENTS.md) · [Release validation](docs/RELEASE_VALIDATION.md)
+
 ## What you can do
 
 - See all ten assets and the three highest in past-30-minute volatility.
