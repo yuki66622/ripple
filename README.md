@@ -4,8 +4,6 @@
 
 Ripple monitors ten assets, prioritizes three using observed volatility, and provides a separate model-based drawdown estimate. Cryptocurrency prices are the live test data, supplied by Binance's public API; the product's focus is managing attention.
 
-![Ripple desktop interface](docs/ripple-preview.jpg)
-
 [Full experiment record: methods, results, failures, and limitations](docs/EXPERIMENTS.md) · [Release validation](docs/RELEASE_VALIDATION.md)
 
 ## What you can do
