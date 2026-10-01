@@ -6,8 +6,6 @@ Ripple monitors ten assets, prioritizes three using observed volatility, and pro
 
 ![Ripple desktop interface](docs/ripple-preview.jpg)
 
-[Demo video](docs/Ripple-demo.mp4)
-
 [Full experiment record: methods, results, failures, and limitations](docs/EXPERIMENTS.md) · [Release validation](docs/RELEASE_VALIDATION.md)
 
 ## What you can do
